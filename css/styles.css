@@ -1,4 +1,4 @@
-/* Color used 
+/* Color used
 
 Text color (dark gray): #2b2b2b;
 Link color (green): #357b70;
@@ -95,7 +95,7 @@ button:hover, button:focus {
 
 .page-footer {
 	clear: 	both;
-	display: flex;	
+	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
@@ -264,7 +264,7 @@ button:focus,
 }
 
 @media (max-width: 500px) {
-	.profile: {
+	.profile {
 		grid-template-columns: 100%;
 	}
 }
