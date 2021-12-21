@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
@@ -37,8 +37,9 @@
 	<!-- Main content -->
 	<section>
 		<h1 class="work">Work</h1><br>
-		<div class="meetapp" style="width: 18rem;">
-			<img class="card-img-top" src="image/meet-app-192.png" alt="Card image cap">
+		<div class="project-list">
+		<div class="project-list__item" style="width: 18rem;">
+			<img class="card-img-top" src="image/meet-app1.PNG" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Meet App</h5>
 				<p class="card-text">This is a serverless progressive web application with React, using a test-driven development technique. This application uses Google Calendar API to fetch evetns.</p>
@@ -46,67 +47,64 @@
 				<a href="https://clove20123.github.io/meet/" >Live demo</a>
 			</div>
 		</div>
-		<div class="grid">
-			<!-- Grid items will live here -->
-			<div class="grid__item">
-				<h2>Getting Started with Web Development</h2>
-				<p>
-					For this project I created my first Kanban board. I also learnded about the role of a web developer.
-				</p>
-				<a href="#">See project on Ora</a>
+		<div class="project-list__item" style="width: 18rem;">
+			<img class="card-img-top" src="image/pokedex.PNG" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Pokedex</h5>
+				<p class="card-text">The obejective was to create a Pokedex using JavaScript, HTML, and CSS. The application displays details that are fetched form an external API into a modal.</p>
+				<a href="https://github.com/clove20123/js-app" >Github repository</a>
+				<a href="https://clove20123.github.io/js-app/" >Live demo</a>
 			</div>
-			<div class="grid__item">
-				<h2>HTML and the Web</h2>
-				<p>
-					In this project I learned about the basic structure of the web and how the internet works. Ended the project with creating my first HTML document.
-				</p>
-				<a href="#">See project on Github</a>
 			</div>
-			<div class="grid__item">
-				<h2>HTML Semantics</h2>
-				<p>
-					Here I learned about commenting and code indentation. As well as, working with hyperlinks to access internal and external pages. I implemented HTML semantics as well as form and graphic elements into my HTML document.
-				</p>
-				<a href="#">See project on Github</a>
-			</div>
-			<div class="grid__item">
-				<h2>Advanced HTML and Web Accessibility</h2>
-				<p>
-					For this task I applied advanced HTML attributes for web accessibility. I used ARIA to create dynamic content.
-				</p>
-				<a href="#">See project on Github</a>
-			</div>
-			<div class="grid__item">
-				<h2>CSS and The Look of Your Website</h2>
-				<p>
-					Here I was introduced to basic CSS and applied styling to my HTML document through CSS.
-				</p>
-				<a href="#">See project on Github</a>
-			</div>
-			<div class="grid__item">
-				<h2>Advanced CSS Layout</h2>
-				<p>
-					For my last project to date I learned how to create and implement a CSS grid for my webpage.
-				</p>
-				<a href="#">See project on Github</a>
-			</div>
+			<div class="project-list__item" style="width: 18rem;">
+				<img class="card-img-top" src="image/myflix.PNG" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">myFlix-client</h5>
+					<p class="card-text">This is a client-side of myFlix application. It is built using React and based off an existing REST API that I have built</p>
+					<a href="https://github.com/clove20123/myFlix-client" >Github repository</a>
+				</div>
+				</div>
+				<div class="project-list__item" style="width: 18rem;">
+					
+					<div class="card-body">
+						<h5 class="card-title">movie_api</h5>
+						<p class="card-text">The server-side component of a “movies” web application provide users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.</p>
+						<a href="https://github.com/clove20123/movie_api" >Github repository</a>
+					
+					</div>
+					</div>
+					<div class="project-list__item" style="width: 18rem;">
+						<img class="card-img-top" src="image/port.PNG" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Portfolio</h5>
+							<p class="card-text">The obejective was to create a Pokedex using JavaScript, HTML, and CSS. The application displays details that are fetched form an external API into a modal.</p>
+							<a href="https://github.com/clove20123/js-app" >Github repository</a>
+							<a href="https://clove20123.github.io/js-app/" >Live demo</a>
+						</div>
+						</div>
+						<div class="project-list__item" style="width: 18rem;">
+							<img class="card-img-top" src="image/todolist.PNG" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">To-Do-List</h5>
+								<p class="card-text">This is a basic to-do-list app using jQuery.</p>
+								<a href="https://github.com/clove20123/To-Do-List-App" >Github repository</a>
+								
+							</div>
+							</div>
 		</div>
+		
 	</section>
 	<!-- footer with links to social media profiles -->
-<footer class="page-footer">
-	<!-- Footer showing how to find me on other sites -->
-	<p>Find me on</p>
-	<div class="social-media">
-		<a href="https://github.com/">
+	<footer>
+		<!-- Footer showing how to find me on other sites -->
+		<p>Find me on</p>
+		<a href="https://github.com/clove20123">
 			<img src="image/github-icon.svg" alt="Github">
 		</a>
-		<a href="https://twitter.com">
-			<img src="image/twitter-icon.svg" alt="Twitter">
-		</a>
-		<a href="https://linkedin.com">
+	
+		<a href="https://www.linkedin.com/in/chandler-love-6b8279172/">
 			<img src="image/linkedin-icon.svg" alt="LinkedIn">
 		</a>
-	</div>
-</footer>
+	</footer>
 </body>
 </html>
