@@ -133,10 +133,19 @@ button:focus {
   margin-left: 15px;
 }
 
+/* page container*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 /* footer */
 
 footer {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;
 }
 
 /* contact info */
@@ -268,30 +277,43 @@ button:focus,
   h1 {
     font-size: 22px;
   }
+  .page-container {
+    max-width: 230px;
+    margin: 0 auto;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1279px) {
   .project-list {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-  .project-list__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .project {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
   .project-list__item:last-child {
-    grid-column: auto/ auto;
-    grid-row: auto / auto;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .page-container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+  .project {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .project-list__item:last-child {
+    grid-column: 1/ 1;
+    grid-row: 1/ 1;
   }
   h1 {
     font-size: 22px;
+  }
+
+  .page-container {
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
