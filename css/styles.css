@@ -265,6 +265,8 @@ button:focus,
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/*media quieries */
+
 @media all and (max-width: 500px) {
   .project-list {
     grid-template-columns: 1fr;
