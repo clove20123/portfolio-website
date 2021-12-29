@@ -137,8 +137,42 @@ button:focus {
 .page-container {
   position: relative;
   min-height: 100vh;
+  place-items: center;
+  text-align: center;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#skills {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#skills td,
+#skills th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#skills tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#skills tr:hover {
+  background-color: #ddd;
+}
+
+#skills th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000e09;
+  color: white;
+}
 /* footer */
 
 footer {
@@ -156,6 +190,16 @@ footer {
 
 .contact-form {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #c1c1c1;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  margin-bottom: 50px;
 }
 
 .contact-header {
@@ -175,6 +219,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    place-items: center;
   }
 
   .project-list__item {
