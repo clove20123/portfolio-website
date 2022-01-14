@@ -212,6 +212,10 @@ footer {
   text-align: center;
 }
 
+.casestudy {
+  text-align: left;
+}
+
 /* start grid fallback */
 .project-list__item {
   display: inline-block;

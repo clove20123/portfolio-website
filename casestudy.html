@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title of my website -->
+	<title>Chandler Love's Porfolio</title>
+	<!-- Link of the icon for my website -->
+	<link rel="shortcut icon" href="./image/favicon-32x32.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+	<header class="page-header">
+		<nav class="main-navigation__item page-header__item">
+		<ul role="menubar" class="navigation-list">
+			<!-- Menu bar -->
+			<li role="presentation">
+				<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+			</li>
+			<li role="presentation">
+				<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+			</li>
+			<li role="presentation">
+				<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+			</li>
+			<li role="presentation">
+				<a href="home.html" role="menuitem" class="navigation-list__item">Projects</a>
+			</li>
+		</ul>
+		</nav>
+	</header>
+	<div class="page-container">
+		<h1>Case Study</h1>
+	<div class="casestudy">
+		<br><h2>Introduction</h2>
+		<p>Overview: The purpose of this project was to give users access to information about movies (including genre and director). The user should be able to signup/login and then be displayed the movie list. From that they can add movies to their favorites and view/edit/delete their profile. 
+			<br>Purpose: This was a project I created as part of my Full-Stack course with CareerFoundry.
+			<br>Objective: The objective of this project was to create and understand backend/server-side as well as creating a client side that can connect to the server-side.
+			<br>Project scale: Probably a 5-6-month project but took closer to 9 months to finish. This was 2 separate projects in my course, but I combined them here since they rely on each other. 
+			</p>
+			<h2>Tools Used</h2>
+			<ul class="tools-list">
+				<li>React</li>
+				<li>React Bootstrap</li>
+				<li>React Redux</li>
+				<li>Parcel</li>
+				<li>MongoDB</li>
+				<li>Express</li>
+				<li>Mongoose</li>
+				<li>Node.js</li>
+				<li>JavaScript</li>
+			</ul>
+			<h2>Server-Side</h2>
+			<p>For the server-side I created a RESTful API. This was done with a nonrelational database (mongoDB), Express, and Node.js. Here is where you use common HTTP methods such as GET, PUT, and DELETE. This is where all the information is stored from user info to movie info. The API provides info in JSON format. Postman was my friend at this point in the project. I used postman to check my endpoints and make sure that everything worked properly. After implementing this I added JWT authentication which made it where the user had to have a token to log in. This is used to help secure user information.</p>
+			<img class="card-img-top" src="image/api-login.PNG" alt="api login">
+			<img class="card-img-top" src="image/api-users.PNG" alt="api users">
+			<img class="card-img-top" src="image/api-movies.PNG" alt="api movies">
+			<h2>Client-Side</h2>
+			<p>This step was started after finishing the API. I built an interface that would allow users to create a login and profile so they could retrieve the movie list. This was developed with React and React Redux. Include in the project was a login view, main view, movie view, and profile view. The login view allowed user to login or signup if they were a new user. The main view showed a list of all movies. The movie view should a single movie when the user clicked on a movie. Lastly, the profile view showed the users profile where they could access favorite movies, update their profile, and delete account. 
+			</p>
+			<img class="card-img-top" src="image/myFlix-login.PNG" alt="login">
+			<img class="card-img-top" src="image/myFlix-signup.PNG" alt="sign up">
+			<img class="card-img-top" src="image/myFlix-movieview.PNG" alt="movie view">
+			<img class="card-img-top" src="image/myFlix-directorview.PNG" alt="director view">
+			<img class="card-img-top" src="image/myFlix-genreview.PNG" alt="genre view">
+			<img class="card-img-top" src="image/myFlix-profileview.PNG" alt="profile view">
+			<h2>Challenges</h2>
+			<p>This project was by far my biggest challenge throughout my Full-Stack course. It took a lot more time than I expected to spend on it. This was mainly due to React. It was my first time using React and it proved to be difficult but with help from my mentor and tutor I got through it and learned a lot in the process. I also ran into some problems when creating the server-side. The problems with server-side were mainly due to all my data being erased from mongoDB (my mentor and tutor still aren’t sure how this happened). To deal with these challenges I took a few different steps. To start with I booked calls with mentor to talk through the problems I was facing. Also, I completed a few small react YouTube tutorials to help myself better understand react. Lastly, I searched specific coding problems or issue I had on Stack Overflow.  </p>
+			<h2>Conclusion</h2>
+			<p>Overall, this was a very difficult but rewarding task. I faced many challenges and an extended timeline, but this will greatly prepare me for using React in the future. Facing challenges are sometimes the best way to learn and progress and I certainly feel like I did that with this project. Reflecting on the project now I think it could use some more styling to really show off all my skills. Otherwise, it runs very well, and everything functions as expected. </p>
+
+	</div>
+	</div>
+
+<footer>
+	<!-- Footer showing how to find me on other sites -->
+	<p>Find me on</p>
+	<a href="https://github.com/clove20123" target="_blank">
+		<img src="image/github-icon.svg" alt="Github">
+	</a>
+
+	<a href="https://www.linkedin.com/in/chandler-love-6b8279172/" target="_blank">
+		<img src="image/linkedin-icon.svg" alt="LinkedIn">
+	</a>
+	<a href="https://twitter.com/clove_27" target="_blank"><img src="image/twitter-icon.svg" alt="Twitter"></a>
+</footer>
+
+<script src="js/tota11y.min.js"></script>
+
+</body>
+</html>
