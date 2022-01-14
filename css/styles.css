@@ -217,8 +217,8 @@ footer {
 }
 
 .case-img {
-  max-width: 700px;
-  max-height: 1000px;
+  max-width: 500px;
+  max-height: 5000px;
 }
 
 /* start grid fallback */
