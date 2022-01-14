@@ -13,7 +13,7 @@ Button color: #357b70;
 }
 
 :root {
-  --primary-color: #357b70;
+  --primary-color: navy;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --heading-weight: 700;
@@ -142,7 +142,7 @@ button:focus {
 /* page container*/
 .page-container {
   position: relative;
-  min-height: 70vh;
+  min-height: 80vh;
   place-items: center;
   text-align: center;
   background-color: #edc655;
@@ -184,6 +184,7 @@ table {
 
 footer {
   text-align: center;
+  height: 2.5rem;
   position: absolute;
   width: 100%;
 }
