@@ -19,6 +19,10 @@ Button color: #357b70;
   --heading-weight: 700;
 }
 
+header {
+  width: 100%;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -26,6 +30,7 @@ body {
   /* Sets the font size to 16px*/
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
+  width: 100%;
 }
 
 h1 {
@@ -49,7 +54,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #05676e;
+  color: #fbfdfd;
 }
 
 a:hover,
@@ -60,7 +65,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color: #fdfdfd;
 }
 
 button {
@@ -69,7 +74,7 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button*/
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
   /* adds spacing to the button */
@@ -114,6 +119,7 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
+  background-color: navy;
 }
 
 .page-header__item {
@@ -136,9 +142,10 @@ button:focus {
 /* page container*/
 .page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   place-items: center;
   text-align: center;
+  background-color: #edc655;
 }
 
 table {
@@ -179,7 +186,6 @@ footer {
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 2.5rem;
 }
 
 /* contact info */
