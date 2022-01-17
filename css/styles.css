@@ -235,7 +235,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    place-items: center;
+    justify-items: center;
+    margin: 20px;
   }
 
   .project-list__item {
@@ -243,7 +244,7 @@ footer {
     padding: 15px;
     width: auto;
     min-height: auto;
-    margin: 0;
+    margin: 10px;
   }
 }
 
