@@ -13,7 +13,7 @@ Button color: #357b70;
 }
 
 :root {
-  --primary-color: navy;
+  --primary-color: black;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --heading-weight: 700;
@@ -101,6 +101,7 @@ button:focus {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+  margin: 20px;
 }
 
 .page-footer {
@@ -119,7 +120,7 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: navy;
+  background-color: black;
 }
 
 .page-header__item {
@@ -145,7 +146,7 @@ button:focus {
   min-height: 80vh;
   place-items: center;
   text-align: center;
-  background-color: #edc655;
+  background-color: #add8e6;
 }
 
 table {
@@ -182,6 +183,43 @@ table {
   color: white;
   text-align: center;
 }
+
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container div:hover img {
+  filter: grayscale(0);
+}
+.grid-container div:hover {
+  border-color: coral;
+}
+.grid-container div img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+}
+
 /* footer */
 
 footer {
@@ -242,7 +280,7 @@ footer {
   }
 
   .project-list__item {
-    background-color: lightgray;
+    background-color: #949494;
     padding: 15px;
     width: auto;
     min-height: auto;
