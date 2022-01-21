@@ -100,7 +100,7 @@ button:focus {
   float: left;
   width: 250px;
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 15%;
   margin: 20px;
 }
 
@@ -147,11 +147,13 @@ button:focus {
   place-items: center;
   text-align: center;
   background-color: #add8e6;
+  padding-top: 20px;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10%;
 }
 
 #skills {
@@ -277,6 +279,8 @@ footer {
     grid-gap: 20px;
     justify-items: center;
     margin: 20px;
+    grid-auto-rows: auto;
+    row-gap: 10px;
   }
 
   .project-list__item {
